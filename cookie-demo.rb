@@ -1,4 +1,7 @@
+# http://github.com/saasbook/cookie-demo
+
 enable :sessions
+set :session_secret, '!#^Dxweq'
 
 get '/' do
   session['count'] ||= 0
